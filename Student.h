@@ -1,9 +1,10 @@
+
 class Student {
    private:
       int studentId;
-      char name [20];
+      char name[20];
   
    public:
-     assignDetails(int ID, char stuName) ;
-    display(); 
-}
+     void assignDetails(int ID, char stuName[]) ;
+    void display(); 
+};
