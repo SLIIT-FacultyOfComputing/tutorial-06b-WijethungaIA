@@ -1,26 +1,32 @@
+#include <iostream>
 #include "Box.h"
+using namespace std;
 
 // Implement setters and getters
- void setlength(int l)
+ void Box::setLength(int l)
 {
   length=l;
 }
-void setwidth(int w){
+void Box::setWidth(int w)
+{
   width=w;
 }
-void setheight(int h){
+void Box::setHeight(int h)
+{
 height=h;   
 }
-int getlength(){
+
+int Box::getLength(){
   return length;
 }
-int getwidth(){
+int Box::getWidth(){
   return width;
 }
-int getheight(){
+int Box::getHeight(){
   return height;
 }
 
-// Implemenet the calcVolume() unction
+ //Implemenet the calcVolume() unction
 int Box::calcVolume() {
-}
+  return height*width*length;
+  }
